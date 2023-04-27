@@ -144,82 +144,82 @@
           If a person meets all of these conditions, then the major premise suggests that they are not in loss, and if they do not meet these conditions, then they are in loss. This principle is a reminder to Muslims that they must follow the teachings of the Quran and do good deeds in order to be successful in this life and the next.<br><br>
           In conclusion, the Quran uses the IF THEN ELSE principle to explain the consequences of certain actions or beliefs. The major premise states that if universal laws of time have passed, then mankind is in loss unless they meet certain conditions. These conditions are defined in the minor premises, which are based on specific verses from the Quran. By following these teachings, Muslims can lead a successful life and achieve salvation in the hereafter.<br><br>
           <b>Example:</b>
-          <br><br>#include <iostream>
+          <br>#include <iostream>
           <br><br>
-          <br><br>using namespace std;
+          <br>using namespace std;
           <br><br>
-          <br><br>// The major premise
-          <br><br>bool check_mankind_status(bool time_has_passed_universal_laws, bool QA1, bool QA2, bool QA3, bool QB, bool QC, bool QD, bool QE) {
-          <br><br>    if (time_has_passed_universal_laws) {
-          <br><br>        if (!(QA1 && QA2 && QA3 && QB && QC && QD && QE)) {
-          <br><br>            return true;
-          <br><br>        } else {
-          <br><br>            return false;
-          <br><br>        }
-          <br><br>    } else {
-          <br><br>        return true;
-          <br><br>    }
-          <br><br>}
+          <br>// The major premise
+          <br>bool check_mankind_status(bool time_has_passed_universal_laws, bool QA1, bool QA2, bool QA3, bool QB, bool QC, bool QD, bool QE) {
+          <br>    if (time_has_passed_universal_laws) {
+          <br>        if (!(QA1 && QA2 && QA3 && QB && QC && QD && QE)) {
+          <br>            return true;
+          <br>        } else {
+          <br>            return false;
+          <br>        }
+          <br>    } else {
+          <br>        return true;
+          <br>    }
+          <br>}
           <br><br>
-          <br><br>// The A minor premise "belief_in_nature"
-          <br><br>bool check_belief_in_nature(bool belief_in_Allah, bool belief_in_Rasul, bool belief_in_Light) {
-          <br><br>    if (belief_in_Allah && belief_in_Rasul && belief_in_Light) {
-          <br><br>        return true;
-          <br><br>    } else {
-          <br><br>        return false;
-          <br><br>    }
-          <br><br>}
+          <br>// The A minor premise "belief_in_nature"
+          <br>bool check_belief_in_nature(bool belief_in_Allah, bool belief_in_Rasul, bool belief_in_Light) {
+          <br>    if (belief_in_Allah && belief_in_Rasul && belief_in_Light) {
+          <br>        return true;
+          <br>    } else {
+          <br>        return false;
+          <br>    }
+          <br>}
           <br><br>
-          <br><br>// The B minor premise "do_righteous_deeds"
-          <br><br>bool check_do_righteous_deeds(bool Verse_4_64_65, bool Verse_7_156_158) {
-          <br><br>    if (Verse_4_64_65 && Verse_7_156_158) {
-          <br><br>        return true;
-          <br><br>    } else {
-          <br><br>        return false;
-          <br><br>    }
-          <br><br>}
+          <br>// The B minor premise "do_righteous_deeds"
+          <br>bool check_do_righteous_deeds(bool Verse_4_64_65, bool Verse_7_156_158) {
+          <br>    if (Verse_4_64_65 && Verse_7_156_158) {
+          <br>        return true;
+          <br>    } else {
+          <br>        return false;
+          <br>    }
+          <br>}
           <br><br>
-          <br><br>// The C minor premise "enjoin_a_community"
-          <br><br>bool check_enjoin_a_community(bool Verse_60_9, bool Verse_58_22) {
-          <br><br>    if (Verse_60_9 && Verse_58_22) {
-          <br><br>        return true;
-          <br><br>    } else {
-          <br><br>        return false;
-          <br><br>    }
-          <br><br>}
+          <br>// The C minor premise "enjoin_a_community"
+          <br>bool check_enjoin_a_community(bool Verse_60_9, bool Verse_58_22) {
+          <br>    if (Verse_60_9 && Verse_58_22) {
+          <br>        return true;
+          <br>    } else {
+          <br>        return false;
+          <br>    }
+          <br>}
           <br><br>
-          <br><br>// The D minor premise "enjoin_to_truth_common_law"
-          <br><br>bool check_enjoin_to_truth_common_law(bool Verse_75_19, bool Verse_11_17, bool Verse_4_82) {
-          <br><br>    if (Verse_75_19 && Verse_11_17 && Verse_4_82) {
-          <br><br>        return true;
-          <br><br>    } else {
-          <br><br>        return false;
-          <br><br>    }
-          <br><br>}
+          <br>// The D minor premise "enjoin_to_truth_common_law"
+          <br>bool check_enjoin_to_truth_common_law(bool Verse_75_19, bool Verse_11_17, bool Verse_4_82) {
+          <br>    if (Verse_75_19 && Verse_11_17 && Verse_4_82) {
+          <br>        return true;
+          <br>    } else {
+          <br>        return false;
+          <br>    }
+          <br>}
           <br><br>
-          <br><br>// The E minor premise "enjoin_to_patience_gift_economy_community"
-          <br><br>bool check_enjoin_to_patience_gift_economy_community(bool Verse_28_83, bool Verse_90_11_18, bool Verse_2_279) {
-          <br><br>    if (Verse_28_83 && Verse_90_11_18 && Verse_2_279) {
-          <br><br>        return true;
-          <br><br>    } else {
-          <br><br>        return false;
-          <br><br>    }
-          <br><br>}
+          <br>// The E minor premise "enjoin_to_patience_gift_economy_community"
+          <br>bool check_enjoin_to_patience_gift_economy_community(bool Verse_28_83, bool Verse_90_11_18, bool Verse_2_279) {
+          <br>    if (Verse_28_83 && Verse_90_11_18 && Verse_2_279) {
+          <br>        return true;
+          <br>    } else {
+          <br>        return false;
+          <br>    }
+          <br>}
           <br><br>
-          <br><br>int main() {
-          <br><br>    // Example usage
-          <br><br>    bool time_has_passed_universal_laws = true;
-          <br><br>    bool QA1 = true;
-          <br><br>    bool QA2 = true;
-          <br><br>    bool QA3 = true;
-          <br><br>    bool QB = true;
-          <br><br>    bool QC = true;
-          <br><br>    bool QD = true;
-          <br><br>    bool QE = true;
-          <br><br>    bool mankind_is_in_loss = check_mankind_status(time_has_passed_universal_laws, QA1, QA2, QA3, QB, QC, QD, QE);
-          <br><br>    cout << "Mankind is in loss: " << (mankind_is_in_loss ? "true" : "false") << endl;
-          <br><br>    return 0;
-          <br><br>}
+          <br>int main() {
+          <br>    // Example usage
+          <br>    bool time_has_passed_universal_laws = true;
+          <br>    bool QA1 = true;
+          <br>    bool QA2 = true;
+          <br>    bool QA3 = true;
+          <br>    bool QB = true;
+          <br>    bool QC = true;
+          <br>    bool QD = true;
+          <br>    bool QE = true;
+          <br>    bool mankind_is_in_loss = check_mankind_status(time_has_passed_universal_laws, QA1, QA2, QA3, QB, QC, QD, QE);
+          <br>    cout << "Mankind is in loss: " << (mankind_is_in_loss ? "true" : "false") << endl;
+          <br>    return 0;
+          <br>}
       </div>
 </div>
     </main>
